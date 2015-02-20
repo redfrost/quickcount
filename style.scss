@@ -104,7 +104,7 @@ html {
 
 
 /* Buttons */
-.btn {
+.btn, .btn:focus {
   @include box-sizing(border-box);
   font-family: 'Economica', sans-serif;
   background: transparent;
