@@ -96,6 +96,7 @@ html {
     font-weight: normal;
     text-align: center;
     width: $counter-size / 10;
+    float: left; /* Safari margin fix */
     }
     .divider .numbers {
       position: relative;
@@ -225,7 +226,7 @@ input[name="controls"] { display: none; }
       font-size: ($counter-size / 2) / 1.8;
       width: $counter-size / 10;
       }
-
+  .btn { margin-top: $counter-size / 1.2; }
 }
 
 
@@ -254,6 +255,7 @@ input[name="controls"] { display: none; }
       width: $counter-size / 15;
       }
   .numbers { left: -($counter-size / 30); }
+  .btn { margin-top: $counter-size / 1.4; }
 }
 
 
@@ -270,10 +272,10 @@ input[name="controls"] { display: none; }
       }
   .btn {
     width: 50%;
-    margin: 280px 25% !important;
+    margin-left: 25% !important;
     left: 0;
     }
-    #reset { margin-top: 350px !important; }
+    #reset { margin-top: ($counter-size / 1.4) + 70 !important; }
 }
 
 
